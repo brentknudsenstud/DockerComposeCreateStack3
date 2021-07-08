@@ -1,6 +1,3 @@
-The command to build
-```docker build -t myapp:latest .```
-The command to run
-```docker run -p 3000:3000 myapp```
-How to display the website in a browser
-```open localhost:3000```
+put the commands that we just did in the README.md file
+docker compose up --scale service1=7
+docker compose up --scale service2=
