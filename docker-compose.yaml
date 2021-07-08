@@ -1,0 +1,17 @@
+version: "3.8"  # optional since v1.27.0
+services:
+  service1:
+    build: .
+    ports:
+      - "3000-3010:3000"
+    deploy:
+      mode: replicated
+      replicas: 3
+  service2:
+    build: .
+    ports:
+      - "4000-4010:3000"
+    deploy:
+      mode: replicated
+      replicas: 2
+  
