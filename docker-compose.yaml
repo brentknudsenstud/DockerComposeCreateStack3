@@ -3,16 +3,16 @@ services:
   service1:
     build: .
     image: serviceone
-    ports:
-      - "3000-3010:3000"
+    expose:
+      - 3000 # host:container
     deploy:
       mode: replicated
       replicas: 3
   service2:
     build: .
     image: servicetwo
-    ports:
-      - "4000-4010:3000"
+    expose:
+      - 3001 # host:container
     deploy:
       mode: replicated
       replicas: 2
